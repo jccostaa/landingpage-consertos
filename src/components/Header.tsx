@@ -5,6 +5,8 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import { Avatar } from '@mui/material';
 
+
+import fachada from "./../assets/aparelhos.jpg"
 import logo from "./../assets/logo.png"
 import SupportAgentIcon from '@mui/icons-material/SupportAgent';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
@@ -14,7 +16,7 @@ export function Header() {
 
   return (
     <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static" sx={{ backgroundColor: "#c51321", paddingX: "100px" }}>
+      <AppBar position="static" sx={{ backgroundColor: "#c51321", paddingX: "150px" }}>
         <Toolbar>
           <IconButton
             size="large"
@@ -33,6 +35,8 @@ export function Header() {
           <IconButton color="inherit" component="a" href='https://www.facebook.com/consertosrefrigeracao' sx={{ fontWeight: "600", fontSize: "16px" }}> <FacebookIcon /> Facebook</IconButton>
         </Toolbar>
       </AppBar>
+      <Box sx={{width:"100vw", height:"50vh"}} component="img" src={fachada}>
+      </Box>
     </Box>
   )
 }
